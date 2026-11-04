@@ -1,0 +1,22 @@
+directories:
+  output: dist
+  buildResources: build
+appId: in.balaji.nursingcollege.management
+productName: BALAJI COLLEGE OF NURSING
+files:
+  - filter:
+      - app/**/*
+      - electron/**/*
+      - package.json
+asar: true
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+electronVersion: 34.5.8

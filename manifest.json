@@ -1,0 +1,15 @@
+{
+  "id": "./index.html",
+  "name": "BALAJI COLLEGE OF NURSING",
+  "short_name": "BALAJI COLLEGE",
+  "description": "Offline Nursing College Management System",
+  "lang": "en-IN",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#f1f5fb",
+  "theme_color": "#4145d9",
+  "categories": ["education", "productivity"]
+}

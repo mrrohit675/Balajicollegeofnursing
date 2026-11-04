@@ -1,0 +1,26 @@
+{
+  "name": "balaji-college-management",
+  "version": "1.0.0",
+  "description": "Standalone offline Nursing College Management System",
+  "main": "electron/main.js",
+  "author": "BALAJI COLLEGE OF NURSING",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win nsis --x64",
+    "build:dir": "electron-builder --dir"
+  },
+  "devDependencies": {
+    "electron": "^34.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "in.balaji.nursingcollege.management",
+    "productName": "BALAJI COLLEGE OF NURSING",
+    "directories": { "output": "dist" },
+    "files": ["app/**/*", "electron/**/*", "package.json"],
+    "asar": true,
+    "win": { "target": [{ "target": "nsis", "arch": ["x64"] }] },
+    "nsis": { "oneClick": false, "allowToChangeInstallationDirectory": true, "createDesktopShortcut": true, "createStartMenuShortcut": true }
+  }
+}
